@@ -2,10 +2,8 @@
   ### **Sobre o projeto:**
     O projeto Hemocentro tem o objetivo de incentivar a doção de sangue e auxiliar usuários a se informar se estão aptos ou não.
     O sistema apresenta informações sobre os bancos de estoques de sangue (por hora, informações fixas pela inexistencia de API no site do HEMOSC), um questionário interativo baseado nos requisitos gerais e uma seção de dúvidas frequentes.
-  ```
     ⚠️ Este projeto possui caráter exclusivamente informativo e não substitui a triagem realizada por profissionais de saúde.
-  ```
-  ```
+    
   ## Funcionalidades
   * Hero section informativa;
   * Navegação por âncoras;
@@ -16,14 +14,12 @@
   * Redirecionamento para agendamento de doação;
   * Seção de dúvidas frequentes;
   * Layout responsivo.
-  ```
-  ```
+  
   ## Tecnologias Utilizadas: 
   * HTML5
   * CSS3
   * JavaScript (ES6)
-  ```
-  ```
+  
   ## Estrutura do projeto
   │
   ├── favicon.svg 
@@ -31,8 +27,7 @@
   ├── style.css 
   ├── script.js 
   ├── README.md
-  ```
-  ```
+  
   ## Como executar
   Clone o repositório:
   git clone https://github.com/dani-cardoso/hemocentro.git
@@ -40,8 +35,7 @@
   cd hemocentro
   Abra o arquivo index.html no navegador.
   Ou utilize a extensão Live Server do Visual Studio Code.
-  ```
-  ```
+  
  ### Funcionamento do questionário
 
   As perguntas são armazenadas em um array de objetos no arquivo script.js.
@@ -66,8 +60,7 @@
   - Calcula a porcentagem de respostas favoráveis;
   - Exibe um resultado informativo ao final;
   - Disponibiliza o botão de agendamento para usuários potencialmente aptos.
-```
-```
+
   ## Documentação do código
   ### HTML
 
@@ -96,5 +89,4 @@
   * mostrarPergunta(): atualiza o conteúdo do questionário;
   * responder(): valida as respostas do usuário;
   * mostrarResultado(): exibe o resultado final.
-```
 

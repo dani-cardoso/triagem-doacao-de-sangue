@@ -2,7 +2,8 @@
   ### **Sobre o projeto:**
    O projeto Hemocentro tem o objetivo de incentivar a doção de sangue e auxiliar usuários a se informar se estão aptos ou não.
     O sistema apresenta informações sobre os bancos de estoques de sangue (por hora, informações fixas pela inexistencia de API no site do HEMOSC), um questionário interativo baseado nos requisitos gerais e uma seção de dúvidas frequentes.
-    ⚠️ Este projeto possui caráter exclusivamente informativo e não substitui a triagem realizada por profissionais de saúde.    
+    
+  ⚠️ Este projeto possui caráter exclusivamente informativo e não substitui a triagem realizada por profissionais de saúde.    
   
   ## Funcionalidades
   * Hero section informativa;

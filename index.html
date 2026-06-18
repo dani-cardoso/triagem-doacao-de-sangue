@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemocentro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+
+<body>
+  <header>
+      <!-- Cabeçalho com logo e menu de navegação -->
+    <div class="nav-cont">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" width="30px" height="30px">
+        <path d="M50,5 C50,5 15,55 15,80 C15,99 31,115 50,115 C69,115 85,99 85,80 C85,55 50,5 50,5 Z" fill="#cc1a1a" />
+        <path d="M35,75 C35,62 42,52 50,48" stroke="white" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.25" />
+      </svg>
+      <!-- Menu de navegação por âncoras -->
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#estoque">Estoque</a>
+        <a class="quest" href="#questionario-responder">Questionário</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+    </div>
+  </header>
+    <!-- Seção principal (hero section) -->
+  <section id="inicio">
+    <div class="inicio-container">
+      <div class="inicio-grid1">
+        <div class="salvar">
+          <p>1 doação pode salvar até 4 vidas</p>
+        </div>
+        <div class="container-grid1">
+          <h1>Descubra se você esta apto à doar sangue.</h1>
+          <div>
+            <p>Responda o questionário e descubra se está pronto.</p>
+          </div>
+          <!-- Botão que direciona para o questionário -->
+          <div class="res-quest">
+            <a href="#questionario-responder">Responder Questionário</a>
+          </div>
+        </div>
+      </div>
+      <div class="inicio-grid2">
+      <!-- Card ilustrativo do questionário -->
+        <div class="content-modal">
+          <div class="barrinha">
+            <div></div>
+          </div>
+          <h4>Você tem entre 16 e 69 anos?</h4>
+          <p>Menores de 18 anos precisam de autorizaçao de um responsável.</p>
+          <!-- Botões ilustrativos -->
+          <div class="sim">
+            <a>Sim, eu tenho</a>
+          </div>
+          <div class="nao">
+            <a>Não, eu não tenho</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="estoque">
+      <!-- Seção que exibe os estoques de sangue -->
+    <div class="estoque-container">
+      <h2>Estoques de Sangue</h2>
+      <p>Acompanhe os niveis e veja como pode ajudar.</p>
+      <div class="quero-doar">
+        <a href="https://www.hemosc.org.br/agende-sua-doacao.html" target="_blank" rel="noopener noreferrer">Quero Doar</a>
+      </div>
+      <div class="card">
+        <div class="estoque-cards">
+      <!-- Cards com os níveis de estoque por tipo sanguíneo -->
+          <div class="card reduzido">
+            <h3>A-</h3>
+            <span>Reduzido</span>
+            <div class="barra">
+              <div class="nivel"></div>
+            </div>
+          </div>
+          <div class="card reduzido">
+            <h3>A+</h3>
+            <span>Reduzido</span>
+            <div class="barra">
+              <div class="nivel"></div>
+            </div>
+          </div>
+          <div class="card estavel">
+            <h3>B-</h3>
+            <span>Estável</span>
+            <div class="barra">
+              <div class="nivel"></div>
+            </div>
+          </div>
+          <div class="card estavel">
+            <h3>B+</h3>
+            <span>Estável</span>
+            <div class="barra">
+              <div class="nivel"></div>
+            </div>
+          </div>
+          <div class="card estavel">
+            <h3>AB-</h3>
+            <span>Estável</span>
+            <div class="barra">
+              <div class="nivel"></div>
+            </div>
+          </div>
+          <div class="card adequado">
+            <h3>AB+</h3>
+            <span>Adequado</span>
+            <div class="barra">
+              <div class="nivel"></div>
+            </div>
+          </div>
+          <div class="card alerta">
+            <h3>O-</h3>
+            <span>Alerta</span>
+            <div class="barra">
+              <div class="nivel"></div>
+            </div>
+          </div>
+          <div class="card alerta">
+            <h3>O+</h3>
+            <span>Alerta</span>
+            <div class="barra">
+              <div class="nivel"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="questionario-responder" class="questionario">
+      <!-- Conteúdo atualizado via JavaScript -->
+    <h2 class="quest-tit">Questionário</h2>
+    <div class="questionario-card">
+      <span id="etapa" class="etapa">Pergunta 1 de 8</span>
+      <div class="barra-quest">
+        <div id="progresso" class="progresso"></div>
+      </div>
+      <h2 id="pergunta"></h2>
+      <p id="ajuda"></p>
+      <div class="respostas">
+        <button id="btnSim" class="btn-sim">Sim</button>
+        <button id="btnNao" class="btn-nao">Não</button>
+      </div>
+    </div>
+  </section>
+  <!-- Seção de perguntas frequentes -->
+  <section id="duvidas" class="faq">
+    <h2>Dúvidas frequentes</h2>
+    <!-- Demais perguntas frequentes... -->
+    <details>
+      <summary>Quem pode doar sangue?</summary>
+      <p>Pessoas entre 16 e 69 anos, com peso mínimo de 50 kg e em boas condições de saúde.</p>
+    </details>
+
+    <details>
+      <summary>Preciso estar em jejum?</summary>
+      <p>Não. Evite apenas alimentos gordurosos antes da doação.</p>
+    </details>
+
+    <details>
+      <summary>Fiz tatuagem. Posso doar?</summary>
+      <p>Em geral, é necessário aguardar 12 meses após a realização da tatuagem.</p>
+    </details>
+
+    <details>
+      <summary>Com que frequência posso doar?</summary>
+      <p>Homens: até 4 vezes por ano, intervalo mínimo de 60 dias.</p>
+      <p>Mulheres: até 3 vezes por ano, com intervalo mínimo de 90 dias.</p>
+    </details>
+  </section>
+  <!-- Rodapé com informações institucionais -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>🩸 Hemocentro</h3>
+        <p>Sua doação pode salvar até 4 vidas.</p>
+      </div>
+      <!-- Navegação secundária -->
+      <div class="footer-links">
+        <h4>Links rápidos</h4>
+        <a href="#inicio">Início</a>
+        <a href="#estoque">Estoques</a>
+        <a href="#questionario">Questionário</a>
+        <a href="#duvidas">Dúvidas</a>
+      </div>
+    <!-- Informações de contato -->
+      <div class="footer-contato">
+        <h4>Contato</h4>
+
+        <p>📍 Florianópolis - SC</p>
+        <p>☎️ (48) 0000-0000</p>
+        <p>✉️ contato@hemocentro.com</p>
+      </div>
+
+    </div>
+    <!-- Aviso legal -->
+    <div class="footer-bottom">
+      <p>
+        © 2026 Hemocentro • Este questionário não substitui a avaliação médica presencial.
+      </p>
+    </div>
+  </footer>
+    <!-- Arquivo JavaScript responsável pela lógica do questionário -->
+  <script src="script.js"></script>
+</body>
+
+</html>

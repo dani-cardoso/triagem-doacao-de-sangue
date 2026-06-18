@@ -1,0 +1,464 @@
+/* ==================================================
+   ESTILOS GERAIS DA APLICAÇÃO
+   Define fonte, cores de fundo e estilos globais.
+================================================== */
+
+body {
+  font-family: Arial;
+  background-color: #FAF8F8;
+  margin: 0;
+}
+
+body a {
+  text-decoration: none;
+}
+
+/* ==================================================
+   CABEÇALHO E NAVEGAÇÃO
+   Estilização do menu principal e links.
+================================================== */
+
+.nav-cont {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #FFFF;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+nav a {
+  padding: 0.4rem;
+  color: #000;
+}
+
+nav a:hover {
+  background-color: #D91B20;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+/* ==================================================
+   HERO SECTION
+   Seção principal com chamada para o questionário.
+================================================== */
+
+#inicio {
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.inicio-container {
+  width: min(90%, 75rem);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 4rem;
+}
+
+/* ==================================================
+   CONTEÚDO TEXTUAL DA HERO
+================================================== */
+
+.salvar p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FDECEC;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  width: 17rem;
+}
+
+.container-grid1 h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.container-grid1 p {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #6B7280;
+  font-size: 1rem;
+}
+
+/* ==================================================
+   CARD ILUSTRATIVO DO QUESTIONÁRIO
+================================================== */
+
+.inicio-grid2 {
+  width: 100%;
+  max-width: 28rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 1rem 3rem rgba(243, 32, 36, 0.233);
+}
+
+.inicio-grid2 h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.inicio-grid2 p {
+  font-size: 0.8rem;
+  color: #6B7280;
+  background-color: #FDECEC;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+/* ==================================================
+   BOTÕES E COMPONENTES INTERATIVOS
+================================================== */
+
+.sim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F32025;
+  color: #FFFF;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.nao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: solid 1.5px #F32025;
+}
+
+.content-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.barrinha {
+  font-size: 0.8rem;
+  background-color: #FDECEC;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.barrinha div {
+  font-size: 0.8rem;
+  background-color: #F32025;
+  padding: 0.12rem;
+  border-radius: 0.5rem;
+  width: 4rem;
+}
+
+.res-quest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F32025;
+  color: #FFFF;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 15rem;
+}
+
+.res-quest a {
+  color: #FFFF;
+}
+
+.quest {
+  border-radius: 0.5rem;
+  background-color: #D91B20;
+  color: #fff;
+}
+
+/* ==================================================
+   SEÇÃO DE ESTOQUES DE SANGUE
+================================================== */
+
+#estoque {
+  width: min(90%, 75rem);
+  margin: 4rem auto;
+}
+
+.estoque-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.5rem;
+}
+
+.estoque-container h2, p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .08);
+}
+
+/* ==================================================
+   INDICADORES DE NÍVEL DOS ESTOQUES
+================================================== */
+
+.card h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.barra {
+  height: .75rem;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.nivel {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.reduzido .nivel {
+  width: 45%;
+  background: #ebbe71;
+}
+
+.estavel .nivel {
+  width: 80%;
+  background: #4fdf58;
+}
+
+.adequado .nivel {
+  width: 100%;
+  background: #22C55E;
+}
+
+.alerta .nivel {
+  width: 20%;
+  background: #DC2626;
+}
+
+/* ==================================================
+   BOTÃO DE AGENDAMENTO
+================================================== */
+
+.quero-doar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.quero-doar a {
+  background: #F32025;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+/* ==================================================
+   QUESTIONÁRIO DE ELEGIBILIDADE
+================================================== */
+
+.questionario {
+  min-height: 80vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: #faf8f8;
+}
+
+.questionario-card {
+  width: min(100%, 36rem);
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 3rem rgba(243, 32, 36, 0.233);
+}
+
+.etapa {
+  color: #6b7280;
+}
+
+.progresso {
+  width: 12.5%;
+  height: 100%;
+  background: #e61e25;
+}
+
+.questionario-card h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+.questionario-card p {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.quest-tit {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.respostas {
+  display: grid;
+  gap: 1rem;
+}
+
+.respostas button {
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ==================================================
+   RESULTADO DO QUESTIONÁRIO
+================================================== */
+
+.btn-sim {
+  background: #e61e25;
+  color: #fff;
+}
+
+.btn-nao {
+  background: transparent;
+  color: #e61e25;
+  border: 2px solid #e61e25;
+}
+
+.voltar {
+  margin-top: 1.5rem;
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.btn-agendar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background: #e61e25;
+  color: #fff;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.resultado p {
+  color: #6b7280;
+}
+
+.btn-agendar:hover {
+  background: #c9141b;
+}
+
+/* ==================================================
+   RODAPÉ
+================================================== */
+
+.footer {
+  background: #111827;
+  color: #fff;
+}
+
+.footer-container {
+  width: min(90%, 75rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3rem;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 1rem;
+}
+
+.footer p,
+.footer a {
+  display: flex;
+  justify-content: start;
+  color: #d1d5db;
+  text-decoration: none;
+  line-height: 1.8;
+}
+
+.footer a:hover {
+  color: #f32025;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* ==================================================
+   DÚVIDAS FREQUENTES (FAQ)
+================================================== */
+
+.faq {
+  width: min(90%, 75rem);
+  margin: 5rem auto;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.faq details {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq p {
+  margin-top: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
